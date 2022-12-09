@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Regsiter</title>
+  </head>
+  <body>
+    <main class="register">
+      <img
+        src="./img/signup.jpg"
+        alt="register nicklace"
+        class="register__img"
+      />
+      <form id="register" class="register__form">
+        <h1 class="register__title">Create Account</h1>
+        <p class="register__description">
+          Go ahead and sign up, let everyone know how awesome you are!
+        </p>
+        <div class="register__fields">
+          <div class="register__field-container">
+            <div class="register__field">
+              <input
+                type="text"
+                placeholder="Username"
+                class="regsiter__field-input"
+                id="username"
+                name="username"
+              />
+              <img
+                src="./img/field1.png"
+                alt="username icon"
+                class="register__field-icon"
+              />
+            </div>
+            <small class="error-msg"></small>
+          </div>
+          <div class="register__field-container">
+            <div class="register__field">
+              <input
+                type="text"
+                placeholder="Email"
+                class="regsiter__field-input"
+                id="email"
+                name="email"
+              />
+              <img
+                src="./img/field2.png"
+                alt="email icon"
+                class="register__field-icon"
+              />
+            </div>
+            <small class="error-msg"></small>
+          </div>
+          <div class="register__field-container">
+            <div class="register__field">
+              <input
+                type="password"
+                placeholder="Password"
+                class="regsiter__field-input"
+                id="password"
+                name="password"
+              />
+              <img
+                src="./img/field3.png"
+                alt="password icon"
+                class="register__field-icon"
+              />
+            </div>
+            <small class="error-msg"></small>
+          </div>
+          <div class="register__field-container">
+            <div class="register__field">
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                class="regsiter__field-input"
+                id="password_confirmation"
+                name="password_confirmation"
+              />
+              <img
+                src="./img/field3.png"
+                alt="confirm password icon"
+                class="register__field-icon"
+              />
+            </div>
+            <small class="error-msg"></small>
+          </div>
+        </div>
+        <button type="submit" class="register__btn">Create Account</button>
+      </form>
+    </main>
+  </body>
+</html>
