@@ -93,9 +93,7 @@ const handleSubmit = async (e) => {
       console.log(result)
       localStorage.clear()
       userData = localStorage.setItem("user-data", JSON.stringify(result))
-      window.location.replace(
-        "http://127.0.0.1:5500/htmlcss/linkedin-task/success.html"
-      )
+      window.location.replace("/success.html")
     } catch (error) {
       console.log(error)
     }
@@ -103,7 +101,7 @@ const handleSubmit = async (e) => {
 }
 
 // Check for page success & get the user data from localStorage
-if (window.location.pathname === "/htmlcss/linkedin-task/success.html") {
+if (window.location.pathname === "/success.html") {
   let data = JSON.parse(localStorage.getItem("user-data"))
   userEmail.innerHTML = data?.email
   userEmail.href = `mailto:${data?.email}`
